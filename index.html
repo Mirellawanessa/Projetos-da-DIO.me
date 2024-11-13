@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificador de Nível de Herói</title>
+</head>
+<body>
+  <h1>Classificador de Nível de Herói</h1>
+  <label for="nome">Nome do Herói:</label>
+  <input type="text" id="nome" placeholder="Digite o nome do herói">
+  <br><br>
+  <label for="xp">Experiência (XP):</label>
+  <input type="number" id="xp" placeholder="Digite a experiência do herói">
+  <br><br>
+  <button onclick="classificarHeroi()">Classificar</button>
+  
+  <p id="resultado"></p>
+
+  <script>
+    function classificarHeroi() {
+      const nome = document.getElementById("nome").value;
+      const xp = parseInt(document.getElementById("xp").value);
+      let nivel;
+
+      if (xp < 1000) {
+        nivel = "Ferro";
+      } else if (xp <= 2000) {
+        nivel = "Bronze";
+      } else if (xp <= 5000) {
+        nivel = "Prata";
+      } else if (xp <= 7000) {
+        nivel = "Ouro";
+      } else if (xp <= 8000) {
+        nivel = "Platina";
+      } else if (xp <= 9000) {
+        nivel = "Ascendente";
+      } else if (xp <= 10000) {
+        nivel = "Imortal";
+      } else {
+        nivel = "Radiante";
+      }
+
+      // Exibe o resultado
+      document.getElementById("resultado").textContent = `O Herói de nome ${nome} está no nível de ${nivel}`;
+    }
+  </script>
+</body>
+</html>

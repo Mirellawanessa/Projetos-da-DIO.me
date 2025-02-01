@@ -1,0 +1,21 @@
+[submodule "hero-classifier"]
+	path = hero-classifier
+	url = https://github.com/Mirellawanessa/hero-classifier.git
+[submodule "pokedex-project"]
+	path = pokedex-project
+	url = https://github.com/Mirellawanessa/pokedex-project.git
+[submodule "ranked-calculator"]
+	path = ranked-calculator
+	url = https://github.com/Mirellawanessa/ranked-calculator.git
+[submodule "adventure-game"]
+	path = adventure-game
+	url = https://github.com/Mirellawanessa/adventure-game.git
+[submodule "open-source-lab"]
+	path = open-source-lab
+	url = https://github.com/Mirellawanessa/open-source-lab.git
+[submodule "kotlin-tech-academy"]
+	path = kotlin-tech-academy
+	url = https://github.com/Mirellawanessa/kotlin-tech-academy.git
+[submodule "notas-api"]
+	path = notas-api
+	url = https://github.com/Mirellawanessa/notas-api.git
